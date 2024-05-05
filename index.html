@@ -19,8 +19,8 @@
         <form action="#" id="form1" class="multi-step-forms" method="get">
             <h4 class="form-identification-headline">create account</h4>
             <div class="form-fields">
-                <input type="text" name="name" placeholder="Enter your name" class="inputfields">
-                <input type="email" name="emailid" placeholder="Enter your email id" class="inputfields">
+                <input type="text" name="name" placeholder="Enter your name" class="inputfields" required>
+                <input type="email" name="emailid" placeholder="Enter your email id" class="inputfields" required>
             </div>
             <div class="formbtns-box">
                 <button type="button" class="formbtn first_nextbtn">next</button>
@@ -30,7 +30,7 @@
         <form action="#" id="form2" class="multi-step-forms" method="get">
             <h4 class="form-identification-headline">basic details</h4>
             <div class="form-fields">
-                <input type="date" name="date" placeholder="Enter your date" class="inputfields">
+                <input type="date" name="date" placeholder="Enter your date" class="inputfields" required>
                 <select name="gender" class="inputfields">
                     <option value="male" class="inputfields">Male</option>
                     <option value="female" class="inputfields">Female</option>
@@ -45,8 +45,8 @@
         <form action="#" id="form3" class="multi-step-forms" method="get">
             <h4 class="form-identification-headline">user credentials</h4>
             <div class="form-fields">
-                <input type="text" name="username" placeholder="Enter your username" class="inputfields">
-                <input type="password" name="password" placeholder="Enter your password" class="inputfields">
+                <input type="text" name="username" placeholder="Enter your username" class="inputfields" required>
+                <input type="password" name="password" placeholder="Enter your password" class="inputfields" required>
             </div>
             <div class="formbtns-box">
                 <button type="button" class="formbtn second_previousbtn">previous</button>

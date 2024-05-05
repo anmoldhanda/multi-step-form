@@ -91,6 +91,10 @@ body {
   border-bottom: 1px solid var(--white-color);
 }
 
+.inputfields.formerror {
+  border-bottom: 1px solid var(--red-color);
+}
+
 .formbtn {
   background: transparent;
   color: var(--white-color);
