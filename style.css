@@ -1,0 +1,118 @@
+/* ===================================== google fonts ===================================== */
+@import url("https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap");
+
+:root {
+  --white-color: #fff;
+  --red-color: #fb484e;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gothic A1", sans-serif;
+}
+
+body {
+  background-image: url("venom-wallpaper.jpeg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+  background-attachment: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.multi-step-form-container {
+  position: relative;
+  border-radius: 5px;
+  backdrop-filter: blur(50px);
+  width: 70vmin;
+  height: 50vh;
+  padding: 10px;
+  overflow: hidden;
+}
+
+#progress-checker-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  position: relative;
+}
+
+#progress-checker-container::after {
+  content: "";
+  height: 1px;
+  width: calc(100% - 66%);
+  position: absolute;
+  left: 0px;
+  bottom: 0px;
+  background-color: var(--white-color);
+}
+
+.step-columns {
+  text-align: center;
+  width: 33%;
+  padding: 5px;
+  color: var(--white-color);
+  text-transform: capitalize;
+}
+
+.multi-step-forms {
+  position: absolute;
+  left: 6px;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: all 0.3s ease-in-out;
+  width: 100%;
+  margin: 2rem auto;
+}
+
+.form-identification-headline {
+  color: white;
+  text-transform: capitalize;
+}
+
+.form-fields {
+  width: 100%;
+}
+
+.inputfields {
+  width: 96%;
+  padding: 5px 8px;
+  margin: 5px auto;
+  outline: none;
+  border: none;
+  color: white;
+  background: transparent;
+  border-bottom: 1px solid var(--white-color);
+}
+
+.formbtn {
+  background: transparent;
+  color: var(--white-color);
+  padding: 5px 8px;
+  border-radius: 5px;
+  border: 1px solid var(--white-color);
+  text-transform: capitalize;
+  cursor: pointer;
+}
+
+.formbtn:hover {
+  background: var(--white-color);
+  border: 1px solid transparent;
+  color: var(--red-color);
+}
+
+#form2,
+#form3 {
+  left: 450px;
+}

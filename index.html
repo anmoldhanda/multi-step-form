@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>multi step form</title>
+    <!-- ===================================== custom css ===================================== -->
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <div class="multi-step-form-container">
+        <div id="progress-checker-container">
+            <div class="step-columns">step 1</div>
+            <div class="step-columns">step 2</div>
+            <div class="step-columns">step 3</div>
+        </div>
+        <!-- ===================================== create new account form ===================================== -->
+        <form action="#" id="form1" class="multi-step-forms" method="get">
+            <h4 class="form-identification-headline">create account</h4>
+            <div class="form-fields">
+                <input type="text" name="name" placeholder="Enter your name" class="inputfields">
+                <input type="email" name="emailid" placeholder="Enter your email id" class="inputfields">
+            </div>
+            <div class="formbtns-box">
+                <button type="button" class="formbtn first_nextbtn">next</button>
+            </div>
+        </form>
+        <!-- ===================================== basic details form ===================================== -->
+        <form action="#" id="form2" class="multi-step-forms" method="get">
+            <h4 class="form-identification-headline">basic details</h4>
+            <div class="form-fields">
+                <input type="date" name="date" placeholder="Enter your date" class="inputfields">
+                <select name="gender" class="inputfields">
+                    <option value="male" class="inputfields">Male</option>
+                    <option value="female" class="inputfields">Female</option>
+                </select>
+            </div>
+            <div class="formbtns-box">
+                <button type="button" class="formbtn first_previousbtn">previous</button>
+                <button type="button" class="formbtn second_nextbtn">next</button>
+            </div>
+        </form>
+        <!-- ===================================== user credentials form ===================================== -->
+        <form action="#" id="form3" class="multi-step-forms" method="get">
+            <h4 class="form-identification-headline">user credentials</h4>
+            <div class="form-fields">
+                <input type="text" name="username" placeholder="Enter your username" class="inputfields">
+                <input type="password" name="password" placeholder="Enter your password" class="inputfields">
+            </div>
+            <div class="formbtns-box">
+                <button type="button" class="formbtn second_previousbtn">previous</button>
+                <button type="submit" class="formbtn submitbtn">submit</button>
+            </div>
+        </form>
+    </div>
+    <!-- ===================================== custom js ===================================== -->
+    <script src="main.js"></script>
+  </body>
+</html>
