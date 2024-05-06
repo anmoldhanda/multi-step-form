@@ -63,6 +63,6 @@ second_previousbtn.onclick = function () {
 
 submitbtn.onclick = function(e) {
   if(isform_valid(form3)) {
-    alert(`thank you for contacting us knull will reach out to you soon ${input_name.value}`);
+    alert(`thank you for contacting us we will reach out to you soon ${input_name.value}`);
   }
 }
